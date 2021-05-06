@@ -1,7 +1,10 @@
 #include <iostream>
-#include "KruskalList.h"
+#include "PrimeL.h"
 int main() {
-    KruskalList kruskalList;
-    kruskalList.readDataFromFile("dane.txt");
-    kruskalList.printList();
-}
+    PrimeL prime("dane.txt");
+   prime.displayNeighbourList();
+    prime.PrimeDo();
+  //  prime.printTab();
+    }
+   // prime.PrimeDo();
+
