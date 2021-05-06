@@ -16,20 +16,23 @@ public:
 /// funckja wyświetlająca liste sąsiedztwa
     void displayNeighbourList() const;
     ///funkcja wyświetlająca najkrótszą scieżkę algorytmem prima
-    void PrimeDo();
+    void PrimeDoList();
     void printList() const;  ///funcka wyświetlająca liste wierzchołków
     void printTab() const;
+    void PrimeDoArray();
     ~PrimeL();
 private:
     int numberOfVerticles;  //ilość wierzchołków
     int numerOfEdges;  //liczba krawędzi
     int INF; // nieskonczonosc
-    std::list <pair> *verticles;    //lista przetrzymująca wierzchołki i ich wagi
+    std::list <pair> *verticlesList;    //lista przetrzymująca wierzchołki i ich wagi
     std::priority_queue<pair,std::vector<pair>,std::greater<> > queue; // lista priorytetowa posortowana względem wag od najniższej do najwyższej
-    int tabVerticles;
+    std::vector<pair> *verticles;
+    int **tabVerticles;
     void readDataFromFile(const std::string &fileName); ///metoda odczytująca z pliku wierzchołki i krawędzie
+    void readNumberOfVerticles(const std::string &fileName);
+    void exportFromArrayToQueue();
 
-public:
 
 };
 

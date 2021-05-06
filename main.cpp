@@ -3,8 +3,9 @@
 int main() {
     PrimeL prime("dane.txt");
    prime.displayNeighbourList();
-    prime.PrimeDo();
-  //  prime.printTab();
+    prime.PrimeDoList();
+    prime.printTab();
+    prime.PrimeDoArray();
     }
-   // prime.PrimeDo();
+   // prime.PrimeDoList();
 

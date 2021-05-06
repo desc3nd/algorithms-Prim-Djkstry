@@ -1,0 +1,3 @@
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/CMakeFiles/rebuild_cache.dir

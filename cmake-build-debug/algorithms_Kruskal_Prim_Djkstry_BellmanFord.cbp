@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="algorithms_Kruskal_Prim_Djkstry_BellmanFord">
+				<Option output="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/algorithms_Kruskal_Prim_Djkstry_BellmanFord.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\cpp\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\cpp\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\cpp\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\cpp\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\cpp\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\cpp\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+					<CompileFile command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="algorithms_Kruskal_Prim_Djkstry_BellmanFord/fast">
+				<Option output="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/algorithms_Kruskal_Prim_Djkstry_BellmanFord.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\cpp\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\cpp\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\cpp\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\cpp\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\cpp\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\cpp\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 algorithms_Kruskal_Prim_Djkstry_BellmanFord/fast"/>
+					<CompileFile command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/CPP/MinGW/bin/mingw32-make.exe -f &quot;C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.cpp">
+			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		</Unit>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.h">
+			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		</Unit>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/main.cpp">
+			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		</Unit>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

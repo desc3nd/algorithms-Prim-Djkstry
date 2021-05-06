@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.cpp
+iostream
+-
+vector
+-
+PrimeL.h
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.h
+
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.h
+list
+-
+string
+-
+fstream
+-
+vector
+-
+queue
+-
+
