@@ -20,10 +20,9 @@ void PrimeL::readDataFromFile(const std::string &fileName) {
             verticlesList[ver1].emplace_back(ver2, weight);
             //wrzucam do drugiej listy wierzchołka sąsiadów
             verticlesList[ver2].emplace_back(ver1, weight);
-            std::cerr<<ver1<<" "<<ver2<<" "<<" ";
             verticlesTab[ver1][ver2] = weight;
             verticlesTab[ver2][ver1] = weight;
-
+            queue.push(pair(ver1,weight));
         }
     } else
     {
@@ -59,17 +58,11 @@ PrimeL::PrimeL(const std::string &fileName) {
         }
     }
     readDataFromFile(fileName);
-    //wczytuje wierzchołki
-
-    //inicjuje kolejke priorytetową
-        for(auto & verticle : *verticles)
-        {
-            queue.push(verticle);
-        }
 }
 
 void PrimeL::PrimeDoList() {
     //zmienna inicjalizująca wierzchołek początkowy
+
     int startVertex = 0;
     //zmienna przechowująca wektor kluczy
     std::vector<int> key(numberOfVerticles,INF);
@@ -78,6 +71,7 @@ void PrimeL::PrimeDoList() {
     //zmienna przechowująca rodzica wierzchołka zainicjowana wartościami -1
     std::vector<int> parent(numberOfVerticles,-1);
     //zeruje pierwszy z wierzchołków
+    stopWatch.startCountingTime();
     key[startVertex] = 0;
     queue.push(pair(key[startVertex],startVertex));
     //dopóki kolejka wierzchołków nie jest pusta
@@ -88,7 +82,6 @@ void PrimeL::PrimeDoList() {
         queue.pop();
         for(auto it : verticlesList[ver])
         {
-            // std::cerr<<"cos";
             int neighbour,weight;
             neighbour = it.first;
             weight = it.second;
@@ -99,8 +92,8 @@ void PrimeL::PrimeDoList() {
                 parent[neighbour] = ver;
             }
         }
-
     }
+    stopWatch.stopCountingTime();
     for (int i = 1; i < numberOfVerticles; ++i)
     {
         std::cout<<"ver "<<i<<":"<<parent[i]<<" ";
@@ -130,7 +123,7 @@ void PrimeL::displayNeighbourList() const {
     }
 
 }
-
+///metoda wyświetlająca tablice sąsiadów
 void PrimeL::printTab() const {
     std::cout<<std::endl<<"-  ";
     for(int i=0 ;i<numberOfVerticles;++i)
@@ -149,7 +142,7 @@ void PrimeL::printTab() const {
     }
 
 }
-
+///destruktor czyści dynamicznie zaalokowane elemeny
 PrimeL::~PrimeL() {
    delete [] verticlesList;
     delete verticles;
@@ -178,6 +171,7 @@ void PrimeL::readNumberOfVerticles(const std::string &fileName)  {
 void PrimeL::PrimeDoArray() {
     exportFromArrayToQueue();
     int startVertex = 0;
+
     //zmienna przechowująca wektor kluczy
     std::vector<int> key(numberOfVerticles,INF);
     //zmienna przewująca wiadomość czy wierzchołek przechodził przez mst czy nie
@@ -185,6 +179,7 @@ void PrimeL::PrimeDoArray() {
     //zmienna przechowująca rodzica wierzchołka zainicjowana wartościami -1
     std::vector<int> parent(numberOfVerticles,-1);
     //zeruje pierwszy z wierzchołków
+    stopWatch.startCountingTime();
     key[startVertex] = 0;
     queue.push(pair(key[startVertex],startVertex));
     //dopóki kolejka wierzchołków nie jest pusta
@@ -207,6 +202,7 @@ void PrimeL::PrimeDoArray() {
             }
         }
     }
+    stopWatch.stopCountingTime();
     for (int i = 1; i < numberOfVerticles; ++i)
     {
         std::cout<<"ver "<<i<<":"<<parent[i]<<" ";
@@ -231,4 +227,8 @@ void PrimeL::exportFromArrayToQueue() {
         }
     }
 
+}
+
+long long int PrimeL::returnElapsedTime() {
+    return stopWatch.elapsedTime();
 }

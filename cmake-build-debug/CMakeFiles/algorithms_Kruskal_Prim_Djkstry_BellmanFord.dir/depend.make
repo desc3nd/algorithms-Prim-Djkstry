@@ -9,14 +9,23 @@ CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.obj: ../
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.obj: ../PrimeL.h
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.obj: ../StopWatch.h
 
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.obj: ../DataCreator.h
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.obj: ../Dijkstry.h
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.obj: ../Menu.cpp
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.obj: ../Menu.h
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.obj: ../PrimeL.h
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.obj: ../StopWatch.h
+
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/PrimeL.cpp.obj: ../PrimeL.cpp
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/PrimeL.cpp.obj: ../PrimeL.h
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/PrimeL.cpp.obj: ../StopWatch.h
 
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.obj: ../StopWatch.cpp
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.obj: ../StopWatch.h
 
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj: ../DataCreator.h
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj: ../Dijkstry.h
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj: ../Menu.h
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj: ../PrimeL.h
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj: ../StopWatch.h
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj: ../main.cpp

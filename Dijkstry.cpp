@@ -22,7 +22,6 @@ Dijkstry::Dijkstry(std::string const &fileName) {
             verticlesTab[i][j] = 0;
         }
     }
-    readDataFromFile(fileName);
 }
 
 void Dijkstry::readDataFromFile(const std::string &fileName) {
@@ -38,7 +37,7 @@ void Dijkstry::readDataFromFile(const std::string &fileName) {
         while(read>>ver1>>ver2>>weight)
         {
             verticlesTab[ver1][ver2] = weight;
-            verticleList[ver1].push_back(pair(ver2,weight));
+            verticleList[ver1].emplace_back(ver2,weight);
             queue->push_back(ver1);
         }
     } else
@@ -101,6 +100,7 @@ void Dijkstry::dijkstraTab() {
     int ver=0;
     bool *reviewed;
     reviewed = new bool [numberOfVerticles];
+    stopWatch.startCountingTime();
     for(int i=0;i<numberOfVerticles;i++)
     {
         reviewed[i] = false;
@@ -124,15 +124,20 @@ void Dijkstry::dijkstraTab() {
             }
         }
     }
-    for (int i = 1; i < numberOfVerticles; ++i)
+    stopWatch.stopCountingTime();
+    for (int i = 0; i < numberOfVerticles; ++i)
     {
         std::cout<<"ver "<<i<<":"<<parent[i]<<" ";
     }
     std::cout<<std::endl;
-    for (int i = 1; i < numberOfVerticles; ++i)
+    for (int i = 0; i < numberOfVerticles; ++i)
     {
-        std::cout<<key[i]<<" ";
+        if(key[i] !=INF )
+        {
+            std::cout<<" "<<key[i];
+        }
     }
+    std::cout<<std::endl;
     delete [] key;
     delete [] reviewed;
     delete [] parent;
@@ -174,10 +179,14 @@ void Dijkstry::dijkstraList() {
         std::cout<<"ver "<<i<<":"<<parent[i]<<" ";
     }
     std::cout<<std::endl;
-    for (int i = 1; i < numberOfVerticles; ++i)
+    for (int i = 0; i < numberOfVerticles; ++i)
     {
-        std::cout<<key[i]<<" ";
+        if(key[i] !=INF )
+        {
+            std::cout<<" "<<key[i];
+        }
     }
+    std::cout<<std::endl;
     delete [] key;
     delete [] reviewed;
     delete [] parent;

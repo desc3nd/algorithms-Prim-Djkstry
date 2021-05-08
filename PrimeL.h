@@ -6,6 +6,7 @@
 #include <fstream>
 #include <vector>
 #include <queue>
+#include "StopWatch.h"
 ///para odpowiadająca za reprezentacje krawędzi i wierzchołków
 typedef std::pair<int,int> pair;
 
@@ -20,7 +21,11 @@ public:
     void printList() const;  ///funcka wyświetlająca liste wierzchołków
     void printTab() const;
     void PrimeDoArray();
+    void readNumberOfVerticles(const std::string &fileName);
     ~PrimeL();
+    long long int returnElapsedTime();
+    void readDataFromFile(const std::string &fileName);
+
 private:
     int numberOfVerticles;  //ilość wierzchołków
     int numerOfEdges;  //liczba krawędzi
@@ -29,8 +34,9 @@ private:
     std::priority_queue<pair,std::vector<pair>,std::greater<> > queue; // lista priorytetowa posortowana względem wag od najniższej do najwyższej
     std::vector<pair> *verticles;
     int **verticlesTab;
-    void readDataFromFile(const std::string &fileName); ///metoda odczytująca z pliku wierzchołki i krawędzie
-    void readNumberOfVerticles(const std::string &fileName);
+    StopWatch stopWatch;
+    ///metoda odczytująca z pliku wierzchołki i krawędzie
+
     void exportFromArrayToQueue();
 
 

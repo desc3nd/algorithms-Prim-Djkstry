@@ -6,19 +6,49 @@
 
 #IncludeRegexTransform: 
 
-C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/DataCreator.cpp
-DataCreator.h
-C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/DataCreator.h
-fstream
--
-iostream
--
-random
--
-ctime
--
-
 C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/DataCreator.h
 list
+-
+
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Dijkstry.h
+list
+-
+string
+-
+PrimeL.h
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.h
+StopWatch.h
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/StopWatch.h
+
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Menu.cpp
+iostream
+-
+Menu.h
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Menu.h
+Dijkstry.h
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Dijkstry.h
+PrimeL.h
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.h
+DataCreator.h
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/DataCreator.h
+
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Menu.h
+
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.h
+list
+-
+string
+-
+fstream
+-
+vector
+-
+queue
+-
+StopWatch.h
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/StopWatch.h
+
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/StopWatch.h
+chrono
 -
 

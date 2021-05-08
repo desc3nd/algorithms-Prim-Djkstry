@@ -6,6 +6,7 @@
 #include <ctime>
 
 void DataCreator::create() {
+    generateGraf();
     std::ofstream write("dane.txt");
     srand (time(nullptr));
     if(write.is_open())
@@ -15,8 +16,12 @@ void DataCreator::create() {
         {
             for(int j = i; j < numberOfVerticles; j++)
             {
-                write<<i<<" "<<j<<" "<<verticlesTab[i][j];
-                write<<std::endl;
+                if(verticlesTab[i][j]!=0)
+                {
+                    write<<i<<" "<<j<<" "<<verticlesTab[i][j];
+                    write<<std::endl;
+                }
+
             }
 
         }
@@ -32,7 +37,7 @@ void DataCreator::create() {
 
 
 void DataCreator::generateGraf() {
-    int realNumberOfEdges = (numberOfVerticles * (numberOfVerticles - 1)) / 2;
+    int realNumberOfEdges =numberOfEdges;
     int number = 0;
     bool Ver[numberOfVerticles][numberOfVerticles];
     for(int i = 0; i < numberOfVerticles; i++)
@@ -42,57 +47,23 @@ void DataCreator::generateGraf() {
             Ver[i][j] = false;
         }
     }
-    for(int i = 0; i < numberOfVerticles; i++)
-    {
-        for(int j = 0; j < numberOfVerticles; j++)
-        {
-            if(Ver[i][j])
-            {
-                std::cerr<<"1"<<" ";
-            }
-            else
-            {
-                std::cerr<<"0 ";
-            }
-        }
-        std::cerr<<std::endl;
-    }
-    srand(time(nullptr));
 
+    srand(time(nullptr));
+    verticlesTab[0][1]=50;
+    number--;
     while(number != realNumberOfEdges)
     {
         int j =0;
         int i = rand() % (numberOfVerticles - 1) +1 ;// 1 - 31
         i--;//0-30
         j = rand() %(numberOfVerticles-i -1) + i + 1 ;
-//        while (i==0 && j==0 || (i==numberOfVerticles-1 && j==numberOfVerticles-1))
-//        {
-//            i = rand() % (numberOfVerticles) +1 ;// 1 - 32
-//        }
         if(!Ver[i][j])
         {
             verticlesTab[i][j] = rand() % 30 + 2;
             Ver[i][j] = true;
             number++;
-            std::cerr<<number<<std::endl;
         }
     }
-    for(int i = 0; i < numberOfVerticles; i++)
-    {
-        for(int j = 0; j < numberOfVerticles; j++)
-        {
-            if(Ver[i][j])
-            {
-                std::cerr<<"1"<<" ";
-            }
-            else
-                {
-                    std::cerr<<"0 ";
-                }
-        }
-        std::cerr<<std::endl;
-    }
-
 }
 
 DataCreator::DataCreator(int numberOfVerticles, int numberOfEdges) {

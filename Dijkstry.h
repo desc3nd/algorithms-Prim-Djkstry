@@ -14,7 +14,6 @@ private:
     std::list<int> *queue;
     std::list<pair> *verticleList;
     StopWatch stopWatch;
-    void readDataFromFile(const std::string &fileName); ///metoda odczytująca z pliku wierzchołki i krawędzie
     void readNumbers(const std::string &fileName); ///metoda odczytująca tylko liczbe wierzcholkow i krawędzi
 public:
     explicit Dijkstry(std::string const &fileName);
@@ -24,7 +23,7 @@ public:
     void displayNeighbourList() const;
     long long int returnElapsedTime();
     ~Dijkstry();
-
+    void readDataFromFile(const std::string &fileName); ///metoda odczytująca z pliku wierzchołki i krawędzie
 };
 
 

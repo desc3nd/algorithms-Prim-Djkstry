@@ -92,6 +92,12 @@
 		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Dijkstry.h">
 			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
 		</Unit>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Menu.cpp">
+			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		</Unit>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Menu.h">
+			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		</Unit>
 		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.cpp">
 			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
 		</Unit>

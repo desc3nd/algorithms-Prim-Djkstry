@@ -176,6 +176,33 @@ Dijkstry.cpp.s:
 	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.s
 .PHONY : Dijkstry.cpp.s
 
+Menu.obj: Menu.cpp.obj
+
+.PHONY : Menu.obj
+
+# target to build an object file
+Menu.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.obj
+.PHONY : Menu.cpp.obj
+
+Menu.i: Menu.cpp.i
+
+.PHONY : Menu.i
+
+# target to preprocess a source file
+Menu.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.i
+.PHONY : Menu.cpp.i
+
+Menu.s: Menu.cpp.s
+
+.PHONY : Menu.s
+
+# target to generate assembly for a file
+Menu.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.s
+.PHONY : Menu.cpp.s
+
 PrimeL.obj: PrimeL.cpp.obj
 
 .PHONY : PrimeL.obj
@@ -272,6 +299,9 @@ help:
 	@echo ... Dijkstry.obj
 	@echo ... Dijkstry.i
 	@echo ... Dijkstry.s
+	@echo ... Menu.obj
+	@echo ... Menu.i
+	@echo ... Menu.s
 	@echo ... PrimeL.obj
 	@echo ... PrimeL.i
 	@echo ... PrimeL.s
