@@ -7,14 +7,15 @@ int main() {
 
   dataCreator.generateGraf();
    dataCreator.dispalayTab();
+   dataCreator.create();
 
 //    dataCreator.create(3,6);
-    //Dijkstry dijkstry("dane.txt");
+    Dijkstry dijkstry("dane.txt");
 
    // PrimeL prime("dane.txt");
  //   prime.printTab();
-  //  dijkstry.printTab();
-   // dijkstry.dijkstraTab();
+   dijkstry.printTab();
+    dijkstry.dijkstraTab();
 //    PrimeL prime("dane.txt");
   // prime.displayNeighbourList();
    // prime.PrimeDoList();

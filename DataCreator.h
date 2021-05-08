@@ -10,7 +10,7 @@
 
 class DataCreator {
 public:
-    void create(int numberOfVerticles, int numberOfEdges);
+    void create();
     int numberOfVerticles;
     int numberOfEdges;
     void dispalayTab();
@@ -21,7 +21,6 @@ public:
     ~DataCreator();
 
 private:
-    int randomRangeExcept (int min, int max, std::list<int> &exeptions);
 
     int **verticlesTab;
 
