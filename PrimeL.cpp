@@ -21,15 +21,16 @@ void PrimeL::readDataFromFile(const std::string &fileName) {
             //wrzucam do drugiej listy wierzchołka sąsiadów
             verticlesList[ver2].emplace_back(ver1, weight);
             std::cerr<<ver1<<" "<<ver2<<" "<<" ";
-            tabVerticles[ver1][ver2] = weight;
+            verticlesTab[ver1][ver2] = weight;
+            verticlesTab[ver2][ver1] = weight;
 
         }
     } else
     {
-        std::cerr<<"CANNOT OPEN FILE: "<<fileName<<"in function readDataFromFile - kruskalList";
+        std::cerr<<"CANNOT OPEN FILE: "<<fileName<<"in function readDataFromFile - PrimeL";
         return;
     }
-
+    read.close();
 }
 ///metoda drukująca liste krawędzi i wierzchołków z ich wagami
 void PrimeL::printList() const {
@@ -45,16 +46,16 @@ PrimeL::PrimeL(const std::string &fileName) {
     //alokuje pamięć na tablice list wirzchołków i macierzy sąsiadów
     verticlesList = new std::list<pair> [numberOfVerticles];
     verticles = new std::vector<pair>;
-    tabVerticles = new int *[numberOfVerticles];
+    verticlesTab = new int *[numberOfVerticles];
     for(int i = 0; i < numberOfVerticles ; ++i)
     {
-        tabVerticles[i] = new int[numberOfVerticles];
+        verticlesTab[i] = new int[numberOfVerticles];
     }
     for(int i = 0; i < numberOfVerticles; ++i)
     {
         for(int j = 0; j < numberOfVerticles; ++j)
         {
-            tabVerticles[i][j] = 0;
+            verticlesTab[i][j] = 0;
         }
     }
     readDataFromFile(fileName);
@@ -132,7 +133,7 @@ void PrimeL::displayNeighbourList() const {
 
 void PrimeL::printTab() const {
     std::cout<<std::endl<<"-  ";
-    for(int i=0;i<numberOfVerticles;++i)
+    for(int i=0 ;i<numberOfVerticles;++i)
     {
         std::cout<<i<<" ";
     }
@@ -142,7 +143,7 @@ void PrimeL::printTab() const {
         std::cout<<i<<"| ";
         for(int j = 0; j < numberOfVerticles; ++j)
         {
-            std::cout<<tabVerticles[i][j]<<" ";
+            std::cout << verticlesTab[i][j] << " ";
         }
         std::cout<<"\n";
     }
@@ -150,17 +151,12 @@ void PrimeL::printTab() const {
 }
 
 PrimeL::~PrimeL() {
-    for(int i = 0; i < numberOfVerticles; ++i) {
-        for (auto &it : verticlesList[i]) {
-            delete &it;
-        }
-    }
    delete [] verticlesList;
     delete verticles;
     for(int i = 0; i < numberOfVerticles; ++i) {
-        delete [] tabVerticles[i];
+        delete [] verticlesTab[i];
     }
-    delete [] tabVerticles;
+    delete [] verticlesTab;
 }
 
 void PrimeL::readNumberOfVerticles(const std::string &fileName)  {
@@ -173,9 +169,10 @@ void PrimeL::readNumberOfVerticles(const std::string &fileName)  {
     }
     else
     {
-        std::cerr<<"CANNOT OPEN FILE: "<<fileName<<"in function readNumberOfVerticles - kruskalList";
+        std::cerr<<"CANNOT OPEN FILE: "<<fileName<<"in function readNumberOfVerticles - PrimeL";
         return;
     }
+    read.close();
 }
 
 void PrimeL::PrimeDoArray() {
@@ -198,10 +195,10 @@ void PrimeL::PrimeDoArray() {
         queue.pop();
         for(int i = 0; i < numberOfVerticles; ++i)
         {
-            if(tabVerticles[ver][i] != 0 ) {
+            if(verticlesTab[ver][i] != 0 ) {
                 int neighbour, weight;
                 neighbour = i;
-                weight = tabVerticles[ver][i];
+                weight = verticlesTab[ver][i];
                 if (ifInMst[neighbour] == false && key[neighbour] > weight) {
                     key[neighbour] = weight;
                     queue.push(pair(key[neighbour], neighbour));
@@ -225,11 +222,11 @@ void PrimeL::PrimeDoArray() {
 void PrimeL::exportFromArrayToQueue() {
     for(int i = 0;  i < numberOfVerticles; ++i)
     {
-        for(int j = 0; j < numberOfVerticles; ++j)
+        for(int j = i; j < numberOfVerticles; ++j)
         {
-            if(tabVerticles[i][j] != 0)
+            if(verticlesTab[i][j] != 0)
             {
-                queue.push(pair(i,tabVerticles[i][j]));
+                queue.push(pair(i, verticlesTab[i][j]));
             }
         }
     }

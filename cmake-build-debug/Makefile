@@ -122,6 +122,60 @@ algorithms_Kruskal_Prim_Djkstry_BellmanFord/fast:
 	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/build
 .PHONY : algorithms_Kruskal_Prim_Djkstry_BellmanFord/fast
 
+DataCreator.obj: DataCreator.cpp.obj
+
+.PHONY : DataCreator.obj
+
+# target to build an object file
+DataCreator.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/DataCreator.cpp.obj
+.PHONY : DataCreator.cpp.obj
+
+DataCreator.i: DataCreator.cpp.i
+
+.PHONY : DataCreator.i
+
+# target to preprocess a source file
+DataCreator.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/DataCreator.cpp.i
+.PHONY : DataCreator.cpp.i
+
+DataCreator.s: DataCreator.cpp.s
+
+.PHONY : DataCreator.s
+
+# target to generate assembly for a file
+DataCreator.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/DataCreator.cpp.s
+.PHONY : DataCreator.cpp.s
+
+Dijkstry.obj: Dijkstry.cpp.obj
+
+.PHONY : Dijkstry.obj
+
+# target to build an object file
+Dijkstry.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.obj
+.PHONY : Dijkstry.cpp.obj
+
+Dijkstry.i: Dijkstry.cpp.i
+
+.PHONY : Dijkstry.i
+
+# target to preprocess a source file
+Dijkstry.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.i
+.PHONY : Dijkstry.cpp.i
+
+Dijkstry.s: Dijkstry.cpp.s
+
+.PHONY : Dijkstry.s
+
+# target to generate assembly for a file
+Dijkstry.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.s
+.PHONY : Dijkstry.cpp.s
+
 PrimeL.obj: PrimeL.cpp.obj
 
 .PHONY : PrimeL.obj
@@ -148,6 +202,33 @@ PrimeL.s: PrimeL.cpp.s
 PrimeL.cpp.s:
 	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/PrimeL.cpp.s
 .PHONY : PrimeL.cpp.s
+
+StopWatch.obj: StopWatch.cpp.obj
+
+.PHONY : StopWatch.obj
+
+# target to build an object file
+StopWatch.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.obj
+.PHONY : StopWatch.cpp.obj
+
+StopWatch.i: StopWatch.cpp.i
+
+.PHONY : StopWatch.i
+
+# target to preprocess a source file
+StopWatch.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.i
+.PHONY : StopWatch.cpp.i
+
+StopWatch.s: StopWatch.cpp.s
+
+.PHONY : StopWatch.s
+
+# target to generate assembly for a file
+StopWatch.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.s
+.PHONY : StopWatch.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -185,9 +266,18 @@ help:
 	@echo ... algorithms_Kruskal_Prim_Djkstry_BellmanFord
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... DataCreator.obj
+	@echo ... DataCreator.i
+	@echo ... DataCreator.s
+	@echo ... Dijkstry.obj
+	@echo ... Dijkstry.i
+	@echo ... Dijkstry.s
 	@echo ... PrimeL.obj
 	@echo ... PrimeL.i
 	@echo ... PrimeL.s
+	@echo ... StopWatch.obj
+	@echo ... StopWatch.i
+	@echo ... StopWatch.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

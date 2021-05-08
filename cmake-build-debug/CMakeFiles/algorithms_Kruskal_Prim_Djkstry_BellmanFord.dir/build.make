@@ -82,21 +82,66 @@ CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/PrimeL.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/PrimeL.cpp.s"
 	C:\CPP\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\PrimeL.cpp" -o CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\PrimeL.cpp.s
 
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.obj: CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/flags.make
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.obj: ../Dijkstry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.obj"
+	C:\CPP\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\Dijkstry.cpp.obj -c "C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\Dijkstry.cpp"
+
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.i"
+	C:\CPP\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\Dijkstry.cpp" > CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\Dijkstry.cpp.i
+
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.s"
+	C:\CPP\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\Dijkstry.cpp" -o CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\Dijkstry.cpp.s
+
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.obj: CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/flags.make
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.obj: ../StopWatch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.obj"
+	C:\CPP\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\StopWatch.cpp.obj -c "C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\StopWatch.cpp"
+
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.i"
+	C:\CPP\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\StopWatch.cpp" > CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\StopWatch.cpp.i
+
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.s"
+	C:\CPP\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\StopWatch.cpp" -o CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\StopWatch.cpp.s
+
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/DataCreator.cpp.obj: CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/flags.make
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/DataCreator.cpp.obj: ../DataCreator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/DataCreator.cpp.obj"
+	C:\CPP\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\DataCreator.cpp.obj -c "C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\DataCreator.cpp"
+
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/DataCreator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/DataCreator.cpp.i"
+	C:\CPP\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\DataCreator.cpp" > CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\DataCreator.cpp.i
+
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/DataCreator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/DataCreator.cpp.s"
+	C:\CPP\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\DataCreator.cpp" -o CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\DataCreator.cpp.s
+
 # Object files for target algorithms_Kruskal_Prim_Djkstry_BellmanFord
 algorithms_Kruskal_Prim_Djkstry_BellmanFord_OBJECTS = \
 "CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj" \
-"CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/PrimeL.cpp.obj"
+"CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/PrimeL.cpp.obj" \
+"CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.obj" \
+"CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.obj" \
+"CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/DataCreator.cpp.obj"
 
 # External object files for target algorithms_Kruskal_Prim_Djkstry_BellmanFord
 algorithms_Kruskal_Prim_Djkstry_BellmanFord_EXTERNAL_OBJECTS =
 
 algorithms_Kruskal_Prim_Djkstry_BellmanFord.exe: CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj
 algorithms_Kruskal_Prim_Djkstry_BellmanFord.exe: CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/PrimeL.cpp.obj
+algorithms_Kruskal_Prim_Djkstry_BellmanFord.exe: CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Dijkstry.cpp.obj
+algorithms_Kruskal_Prim_Djkstry_BellmanFord.exe: CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.obj
+algorithms_Kruskal_Prim_Djkstry_BellmanFord.exe: CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/DataCreator.cpp.obj
 algorithms_Kruskal_Prim_Djkstry_BellmanFord.exe: CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/build.make
 algorithms_Kruskal_Prim_Djkstry_BellmanFord.exe: CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/linklibs.rsp
 algorithms_Kruskal_Prim_Djkstry_BellmanFord.exe: CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/objects1.rsp
 algorithms_Kruskal_Prim_Djkstry_BellmanFord.exe: CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable algorithms_Kruskal_Prim_Djkstry_BellmanFord.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\studia 2k19\projekty\sdzio projekt 2\algorithms-Kruskal-Prim-Djkstry-BellmanFord\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable algorithms_Kruskal_Prim_Djkstry_BellmanFord.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

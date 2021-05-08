@@ -80,10 +80,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/DataCreator.cpp">
+			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		</Unit>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/DataCreator.h">
+			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		</Unit>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Dijkstry.cpp">
+			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		</Unit>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Dijkstry.h">
+			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		</Unit>
 		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.cpp">
 			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
 		</Unit>
 		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.h">
+			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		</Unit>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/StopWatch.cpp">
+			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		</Unit>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/StopWatch.h">
 			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
 		</Unit>
 		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/main.cpp">

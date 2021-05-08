@@ -6,23 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.cpp
-iostream
--
-vector
--
-PrimeL.h
-C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.h
-
-C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.h
-list
--
-string
--
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/DataCreator.cpp
+DataCreator.h
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/DataCreator.h
 fstream
 -
-vector
+iostream
 -
-queue
+random
+-
+ctime
+-
+
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/DataCreator.h
+list
 -
 

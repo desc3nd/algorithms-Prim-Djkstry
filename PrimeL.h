@@ -28,7 +28,7 @@ private:
     std::list <pair> *verticlesList;    //lista przetrzymująca wierzchołki i ich wagi
     std::priority_queue<pair,std::vector<pair>,std::greater<> > queue; // lista priorytetowa posortowana względem wag od najniższej do najwyższej
     std::vector<pair> *verticles;
-    int **tabVerticles;
+    int **verticlesTab;
     void readDataFromFile(const std::string &fileName); ///metoda odczytująca z pliku wierzchołki i krawędzie
     void readNumberOfVerticles(const std::string &fileName);
     void exportFromArrayToQueue();
