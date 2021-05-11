@@ -7,11 +7,7 @@
 #include "Dijkstry.h"
 #include "PrimeL.h"
 #include "DataCreator.h"
-Menu::Menu() {
-
-
-}
-
+#include "Tests.h"
 void Menu::start() {
     int xcin=0;
     bool dataInAnotherFile = false;
@@ -22,8 +18,9 @@ void Menu::start() {
         std::cout<<"1.Wczytaj graf z pliku."<<std::endl;
         std::cout<<"2.Wyswietl graf macierzowo i listowo"<<std::endl;
         std::cout<<"3.Algorytm Dijkstry"<<std::endl;
-        std::cout<<"4.Algorytm Prima"<<std::endl;
-        std::cout<<"-1.Wyjdz";
+        std::cout << "4.Algorytm Prima" << std::endl;
+        std::cout << "5.Rób testy" << std::endl;
+        std::cout << "-1.Wyjdz";
         std::cin>>xcin;
         if(xcin == 1)
         {
@@ -73,21 +70,21 @@ void Menu::start() {
                 dataCreator.create();
                 Dijkstry dijkstry("dane.txt");
                 dijkstry.readDataFromFile("dane.txt");
-                std::cout<<"metoda za pomoca tablicy:\n";
-                dijkstry.dijkstraTab();
-                std::cout<<"czas w nanosekundach: "<<dijkstry.returnElapsedTime()<<std::endl;
+                std::cout << "metoda za pomoca tablicy:\n";
+                dijkstry.dijkstraTab(true);
+                std::cout << "czas w mikrosekundach: " << dijkstry.returnElapsedTime() << std::endl;
                 dijkstry.readDataFromFile("dane.txt");
-                dijkstry.dijkstraList();
-                std::cout<<"czas w nanosekundach: "<<dijkstry.returnElapsedTime()<<std::endl;
+                dijkstry.dijkstraList(true);
+                std::cout << "czas w mikrosekundach: " << dijkstry.returnElapsedTime() << std::endl;
             } else {
                 Dijkstry dijkstry(fileName);
                 dijkstry.readDataFromFile(fileName);
-                std::cout<<"metoda za pomoca tablicy:\n";
-                dijkstry.dijkstraTab();
-                std::cout<<"czas w nanosekundach: "<<dijkstry.returnElapsedTime()<<std::endl;
+                std::cout << "metoda za pomoca tablicy:\n";
+                dijkstry.dijkstraTab(true);
+                std::cout << "czas w mikrosekundach: " << dijkstry.returnElapsedTime() << std::endl;
                 dijkstry.readDataFromFile(fileName);
-                dijkstry.dijkstraList();
-                std::cout<<"czas w nanosekundach: "<<dijkstry.returnElapsedTime()<<std::endl;
+                dijkstry.dijkstraList(true);
+                std::cout << "czas w mikrosekundach: " << dijkstry.returnElapsedTime() << std::endl;
             }
         }
             else if(xcin == 4)
@@ -110,27 +107,35 @@ void Menu::start() {
                     dataCreator.create();
                     PrimeL primeL("dane.txt");
                     primeL.readDataFromFile("dane.txt");
-                    std::cout<<"metoda za pomoca tablicy:\n";
-                    primeL.PrimeDoArray();
-                    std::cout<<"czas w nanosekundach: "<<primeL.returnElapsedTime()<<std::endl;
-                    std::cout<<"metoda za pomoca listy:\n";
+                    std::cout << "metoda za pomoca tablicy:\n";
+                    primeL.PrimeDoArray(true);
+                    std::cout << "czas w mikrosekundach: " << primeL.returnElapsedTime() << std::endl;
+                    std::cout << "metoda za pomoca listy:\n";
                     primeL.readDataFromFile("dane.txt");
-                    primeL.PrimeDoList();
-                    std::cout<<"czas w nanosekundach: "<<primeL.returnElapsedTime()<<std::endl;
-                }
-                else
-                {
+                    primeL.PrimeDoList(true);
+                    std::cout << "czas w mikrosekundach: " << primeL.returnElapsedTime() << std::endl;
+                } else {
                     PrimeL primeL(fileName);
                     primeL.readDataFromFile(fileName);
-                    std::cout<<"metoda za pomoca tablicy:\n";
-                    primeL.PrimeDoArray();
-                    std::cout<<"czas w nanosekundach: "<<primeL.returnElapsedTime()<<std::endl;
+                    std::cout << "metoda za pomoca tablicy:\n";
+                    primeL.PrimeDoArray(true);
+                    std::cout << "czas w mikrosekundach: " << primeL.returnElapsedTime() << std::endl;
                     primeL.readDataFromFile(fileName);
-                    std::cout<<"metoda za pomoca listy:\n";
-                    primeL.PrimeDoList();
-                    std::cout<<"czas w nanosekundach: "<<primeL.returnElapsedTime()<<std::endl;
+                    std::cout << "metoda za pomoca listy:\n";
+                    primeL.PrimeDoList(true);
+                    std::cout << "czas w nmikrosekundach: " << primeL.returnElapsedTime() << std::endl;
                 }
+            } else if (xcin == 5) {
+            Tests tests;
+            tests.test();
+        } else if (xcin == -1) {
+            exit(0);
+        } else {
+            while (xcin != 1 || xcin != 2 || xcin != 3 || xcin != 4 || xcin != -1) {
+                std::cerr << "Wybrales zla opcje wybierz ponownie:";
+                std::cin >> xcin;
             }
+        }
 
     }
 }

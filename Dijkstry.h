@@ -14,15 +14,23 @@ private:
     std::list<int> *queue;
     std::list<pair> *verticleList;
     StopWatch stopWatch;
+
     void readNumbers(const std::string &fileName); ///metoda odczytująca tylko liczbe wierzcholkow i krawędzi
 public:
     explicit Dijkstry(std::string const &fileName);
+
     void printTab() const;
-    void dijkstraTab();
-    void dijkstraList();
+
+    void dijkstraTab(bool outcome);
+
+    void dijkstraList(bool outcome);
+
     void displayNeighbourList() const;
+
     long long int returnElapsedTime();
+
     ~Dijkstry();
+
     void readDataFromFile(const std::string &fileName); ///metoda odczytująca z pliku wierzchołki i krawędzie
 };
 

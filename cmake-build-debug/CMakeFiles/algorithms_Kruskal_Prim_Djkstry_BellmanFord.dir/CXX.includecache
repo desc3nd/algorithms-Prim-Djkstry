@@ -20,20 +20,6 @@ C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanF
 StopWatch.h
 C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/StopWatch.h
 
-C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Menu.cpp
-iostream
--
-Menu.h
-C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Menu.h
-Dijkstry.h
-C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Dijkstry.h
-PrimeL.h
-C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.h
-DataCreator.h
-C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/DataCreator.h
-
-C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Menu.h
-
 C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.h
 list
 -
@@ -51,4 +37,18 @@ C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanF
 C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/StopWatch.h
 chrono
 -
+
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Tests.cpp
+iostream
+-
+Tests.h
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Tests.h
+DataCreator.h
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/DataCreator.h
+PrimeL.h
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/PrimeL.h
+Dijkstry.h
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Dijkstry.h
+
+C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Tests.h
 

@@ -15,6 +15,7 @@ CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.obj: ../Menu
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.obj: ../Menu.h
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.obj: ../PrimeL.h
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.obj: ../StopWatch.h
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Menu.cpp.obj: ../Tests.h
 
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/PrimeL.cpp.obj: ../PrimeL.cpp
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/PrimeL.cpp.obj: ../PrimeL.h
@@ -23,10 +24,18 @@ CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/PrimeL.cpp.obj: ../St
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.obj: ../StopWatch.cpp
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.obj: ../StopWatch.h
 
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Tests.cpp.obj: ../DataCreator.h
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Tests.cpp.obj: ../Dijkstry.h
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Tests.cpp.obj: ../PrimeL.h
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Tests.cpp.obj: ../StopWatch.h
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Tests.cpp.obj: ../Tests.cpp
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Tests.cpp.obj: ../Tests.h
+
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj: ../DataCreator.h
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj: ../Dijkstry.h
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj: ../Menu.h
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj: ../PrimeL.h
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj: ../StopWatch.h
+CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj: ../Tests.h
 CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/main.cpp.obj: ../main.cpp
 

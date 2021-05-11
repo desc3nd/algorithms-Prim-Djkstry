@@ -14,16 +14,24 @@ typedef std::pair<int,int> pair;
 class PrimeL {
 public:
     explicit PrimeL(const std::string &fileName);
+
 /// funckja wyświetlająca liste sąsiedztwa
     void displayNeighbourList() const;
+
     ///funkcja wyświetlająca najkrótszą scieżkę algorytmem prima
-    void PrimeDoList();
-    void printList() const;  ///funcka wyświetlająca liste wierzchołków
+    void PrimeDoList(bool outcome);
+
+    void printList() const;  ///funckcja wyświetlająca liste wierzchołków
     void printTab() const;
-    void PrimeDoArray();
+
+    void PrimeDoArray(bool outcome);
+
     void readNumberOfVerticles(const std::string &fileName);
+
     ~PrimeL();
+
     long long int returnElapsedTime();
+
     void readDataFromFile(const std::string &fileName);
 
 private:

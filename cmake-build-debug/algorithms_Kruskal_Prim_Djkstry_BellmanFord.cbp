@@ -110,6 +110,12 @@
 		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/StopWatch.h">
 			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
 		</Unit>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Tests.cpp">
+			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		</Unit>
+		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/Tests.h">
+			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
+		</Unit>
 		<Unit filename="C:/studia 2k19/projekty/sdzio projekt 2/algorithms-Kruskal-Prim-Djkstry-BellmanFord/main.cpp">
 			<Option target="algorithms_Kruskal_Prim_Djkstry_BellmanFord"/>
 		</Unit>

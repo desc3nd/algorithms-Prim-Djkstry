@@ -39,8 +39,8 @@ void PrimeL::printList() const {
 }
 
 PrimeL::PrimeL(const std::string &fileName) {
-    //ustawiam nieskonczość
     readNumberOfVerticles(fileName);
+    //ustawiam nieskonczość
     INF = 0x3f3f3f3f;
     //alokuje pamięć na tablice list wirzchołków i macierzy sąsiadów
     verticlesList = new std::list<pair> [numberOfVerticles];
@@ -60,20 +60,19 @@ PrimeL::PrimeL(const std::string &fileName) {
     readDataFromFile(fileName);
 }
 
-void PrimeL::PrimeDoList() {
+void PrimeL::PrimeDoList(bool outcome) {
     //zmienna inicjalizująca wierzchołek początkowy
-
     int startVertex = 0;
     //zmienna przechowująca wektor kluczy
-    std::vector<int> key(numberOfVerticles,INF);
+    std::vector<int> key(numberOfVerticles, INF);
     //zmienna przewująca wiadomość czy wierzchołek przechodził przez mst czy nie
-    std::vector<bool> ifInMst(numberOfVerticles,false);
+    std::vector<bool> ifInMst(numberOfVerticles, false);
     //zmienna przechowująca rodzica wierzchołka zainicjowana wartościami -1
-    std::vector<int> parent(numberOfVerticles,-1);
+    std::vector<int> parent(numberOfVerticles, -1);
     //zeruje pierwszy z wierzchołków
     stopWatch.startCountingTime();
     key[startVertex] = 0;
-    queue.push(pair(key[startVertex],startVertex));
+    // queue.push(pair(key[startVertex],startVertex));
     //dopóki kolejka wierzchołków nie jest pusta
     while(!queue.empty())
     {
@@ -85,28 +84,33 @@ void PrimeL::PrimeDoList() {
             int neighbour,weight;
             neighbour = it.first;
             weight = it.second;
-            if(ifInMst[neighbour] == false && key[neighbour] > weight)
-            {
+            if (ifInMst[neighbour] == false && key[neighbour] > weight) {
                 key[neighbour] = weight;
-                queue.push(pair(key[neighbour],neighbour));
+                queue.push(pair(neighbour, key[neighbour]));
                 parent[neighbour] = ver;
             }
         }
     }
     stopWatch.stopCountingTime();
-    for (int i = 1; i < numberOfVerticles; ++i)
-    {
-        std::cout<<"ver "<<i<<":"<<parent[i]<<" ";
+    if (outcome) {
+        for (int i = 0; i < numberOfVerticles; ++i) {
+            std::cout << "ver " << i << ":" << parent[i] << " ";
+        }
+        std::cout << std::endl;
+        int sum = 0;
+        for (int i = 0; i < numberOfVerticles; ++i) {
+            if (key[i] != INF) {
+                sum += key[i];
+            }
+        }
+        std::cout << "suma: " << sum;
+        std::cout << std::endl;
     }
-    std::cout<<std::endl;
-    for (int i = 1; i < numberOfVerticles; ++i)
-    {
-        std::cout<<key[i]<<" ";
-    }
-    while(!queue.empty())
-    {
-        queue.pop();
-    }
+
+//    while(!queue.empty())
+//    {
+//        queue.pop();
+//    }
 }
 ///metoda wyświetlająca liste sąsiadów dla każdego wierzchołka wraz z wagami krawędzi
 void PrimeL::displayNeighbourList() const {
@@ -152,69 +156,77 @@ PrimeL::~PrimeL() {
     delete [] verticlesTab;
 }
 
+///metoda czytająca tylko liczbe wierzchołków i liczbę krawędzi
 void PrimeL::readNumberOfVerticles(const std::string &fileName)  {
     std::ifstream read(fileName);
     //sprawdzam czy plik się otworzył
     if(read.is_open())
     {
         //wczytuje dwie pierwsze wartości
-       read>>numerOfEdges>>numberOfVerticles;
-    }
-    else
-    {
-        std::cerr<<"CANNOT OPEN FILE: "<<fileName<<"in function readNumberOfVerticles - PrimeL";
+        read >> numerOfEdges >> numberOfVerticles;
+    } else {
+        std::cerr << "CANNOT OPEN FILE: " << fileName << "in function readNumberOfVerticles - PrimeL";
         return;
     }
     read.close();
 }
 
-void PrimeL::PrimeDoArray() {
+///metoda odpowiadająca za algorytm prima w reprezentacji macierzowej
+void PrimeL::PrimeDoArray(bool outcome) {
     exportFromArrayToQueue();
     int startVertex = 0;
-
     //zmienna przechowująca wektor kluczy
-    std::vector<int> key(numberOfVerticles,INF);
+    std::vector<int> key(numberOfVerticles, INF);
     //zmienna przewująca wiadomość czy wierzchołek przechodził przez mst czy nie
-    std::vector<bool> ifInMst(numberOfVerticles,false);
+    std::vector<bool> ifInMst(numberOfVerticles, false);
     //zmienna przechowująca rodzica wierzchołka zainicjowana wartościami -1
-    std::vector<int> parent(numberOfVerticles,-1);
+    std::vector<int> parent(numberOfVerticles, -1);
     //zeruje pierwszy z wierzchołków
-    stopWatch.startCountingTime();
+    stopWatch.startCountingTime(); //wlaczam stoper
     key[startVertex] = 0;
-    queue.push(pair(key[startVertex],startVertex));
+    // queue.push(pair(key[startVertex],startVertex));
     //dopóki kolejka wierzchołków nie jest pusta
-    while(!queue.empty())
+    while (!queue.empty()) //dopoki kolejka wierzchołków nie jest pusta
     {
-        int ver = queue.top().first;
-        ifInMst[ver] = true;
-        queue.pop();
-        for(int i = 0; i < numberOfVerticles; ++i)
+        int ver = queue.top().first; //wez pierwszy  wierzchołek o najmniejszej wadze
+        ifInMst[ver] = true; // ustaw jako przejrzany
+        queue.pop(); // wyrzuc go
+        for (int i = ver + 1; i < numberOfVerticles; ++i) // przeglądam sąsiadó
         {
-            if(verticlesTab[ver][i] != 0 ) {
+            if (verticlesTab[ver][i] != 0) { //jeżeli jest krawdź między wierzchołkami
                 int neighbour, weight;
                 neighbour = i;
                 weight = verticlesTab[ver][i];
-                if (ifInMst[neighbour] == false && key[neighbour] > weight) {
+                if (ifInMst[neighbour] == false &&
+                    key[neighbour] > weight) { // jeżeli nie przejrzany i key wiekszy od aktualnej wagi
                     key[neighbour] = weight;
-                    queue.push(pair(key[neighbour], neighbour));
+                    queue.push(pair(neighbour, key[neighbour]));
                     parent[neighbour] = ver;
                 }
             }
         }
     }
-    stopWatch.stopCountingTime();
-    for (int i = 1; i < numberOfVerticles; ++i)
+    stopWatch.stopCountingTime(); // stopuje czas algorytmu
+    if (outcome) //jezeli chce wypisac outcome
     {
-        std::cout<<"ver "<<i<<":"<<parent[i]<<" ";
+        for (int i = 0; i < numberOfVerticles; ++i) {
+            std::cout << "ver " << i << ":" << parent[i] << " ";
+        }
+        std::cout << std::endl;
+        int sum = 0;
+        for (int i = 0; i < numberOfVerticles; ++i) {
+            if (key[i] != INF) {
+                sum += key[i];
+            }
+        }
+        std::cout << "suma: " << sum;
+        std::cout << std::endl;
     }
-    std::cout<<std::endl;
-    for (int i = 1; i < numberOfVerticles; ++i)
-    {
-        std::cout<<key[i]<<" ";
-    }
+
 
 }
 
+///metoda wczytujaca do kolejki wierzchołki
 void PrimeL::exportFromArrayToQueue() {
     for(int i = 0;  i < numberOfVerticles; ++i)
     {
@@ -229,6 +241,7 @@ void PrimeL::exportFromArrayToQueue() {
 
 }
 
+///metoda zwracająca czas wykonania algorytmu
 long long int PrimeL::returnElapsedTime() {
     return stopWatch.elapsedTime();
 }

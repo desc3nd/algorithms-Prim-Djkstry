@@ -1,6 +1,3 @@
-//
-// Created by Marcinek on 08.05.2021.
-//
 
 #ifndef ALGORITHMS_KRUSKAL_PRIM_DJKSTRY_BELLMANFORD_MENU_H
 #define ALGORITHMS_KRUSKAL_PRIM_DJKSTRY_BELLMANFORD_MENU_H
@@ -8,7 +5,6 @@
 
 class Menu {
 public:
-explicit Menu();
 void start();
 };
 

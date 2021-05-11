@@ -257,6 +257,33 @@ StopWatch.cpp.s:
 	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/StopWatch.cpp.s
 .PHONY : StopWatch.cpp.s
 
+Tests.obj: Tests.cpp.obj
+
+.PHONY : Tests.obj
+
+# target to build an object file
+Tests.cpp.obj:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Tests.cpp.obj
+.PHONY : Tests.cpp.obj
+
+Tests.i: Tests.cpp.i
+
+.PHONY : Tests.i
+
+# target to preprocess a source file
+Tests.cpp.i:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Tests.cpp.i
+.PHONY : Tests.cpp.i
+
+Tests.s: Tests.cpp.s
+
+.PHONY : Tests.s
+
+# target to generate assembly for a file
+Tests.cpp.s:
+	$(MAKE) -f CMakeFiles\algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir\build.make CMakeFiles/algorithms_Kruskal_Prim_Djkstry_BellmanFord.dir/Tests.cpp.s
+.PHONY : Tests.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -308,6 +335,9 @@ help:
 	@echo ... StopWatch.obj
 	@echo ... StopWatch.i
 	@echo ... StopWatch.s
+	@echo ... Tests.obj
+	@echo ... Tests.i
+	@echo ... Tests.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
